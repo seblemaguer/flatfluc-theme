@@ -272,7 +272,7 @@
    `(notmuch-tree-no-match-face ((t (:foreground ,fui-concrete))))
    `(notmuch-tree-match-tag-face ((t (:inherit notmuch-tree-match-author-face))))
    `(notmuch-tag-unread-face ((t (:foreground ,fui-carrot))))
-   `(notmuch-message-summary-face ((t (:foreground ,fui-dark-concrete))))
+   `(notmuch-message-summary-face ((t (:foreground ,fui-dark-concrete :background ,fui-deep-cloud))))
 
    ;; Highlight-indent-guides
    `(highlight-indent-guides-odd-face ((t (:background ,fui-deep-clouds))))
