@@ -22,7 +22,6 @@
 
 ;;; Code:
 
-
 (deftheme flatfluc
   "FlatUI based theme corresponding to the merge of flatui and flucui-light themes.")
 
@@ -170,7 +169,8 @@
    `(rainbow-delimiters-depth-5-face ((t (:foreground ,fui-dark-sunflower))))
    `(rainbow-delimiters-depth-6-face ((t (:foreground ,fui-dark-emerald))))
    `(rainbow-delimiters-depth-7-face ((t (:foreground ,fui-dark-concrete))))
-   `(rainbow-delimiters-unmatched-face ((t (:foreground ,fui-alizarin))))
+   '(rainbow-delimiters-mismatched-face ((t (:foreground "white" :background "red" :weight bold))))
+   '(rainbow-delimiters-unmatched-face ((t (:foreground "white" :background "red" :weight bold))))
 
    ;; ==== Magit
    `(magit-branch-local ((t (:foreground ,fui-river :background nil))))
