@@ -132,6 +132,10 @@
    `(mode-line-buffer-id ((t (:foreground ,fui-fg))))
    `(mode-line-inactive ((t (:background ,fui-dark-clouds :foreground ,fui-fg :box (:line-width 1)))))
 
+   ;; ==== Main pages
+   `(set-face-attribute 'Man-overstrike nil :inherit 'bold :foreground ,fui-dark-carrot)
+   `(set-face-attribute 'Man-underline nil :inherit 'underline :foreground ,fui-dark-river)
+
    ;; ==== Face for specific prog modes
    `(sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
 
