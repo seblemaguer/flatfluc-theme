@@ -1,4 +1,4 @@
-;;; flatfluc-theme.el --- Custom merge for flucui and flatui themes ;; -*- lexical-binding: t; -*-
+;;; flatfluc-theme.el --- Custom merge of flucui and flatui themes ;; -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019 Sébastien Le Maguer based on the work of MetroWind and John Louis Del Rosario
 
