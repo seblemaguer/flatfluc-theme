@@ -56,6 +56,7 @@
      (fui-fg fui-asphalt)
      )
 
+  (set-face-font 'default "Inconsolata-11")
   (custom-theme-set-faces
    'flatfluc
 
@@ -128,9 +129,9 @@
    `(lazy-highlight ((t (:foreground ,fui-asphalt :weight bold :background ,fui-sunflower))))
 
    ;; ===== Modeline
-   `(mode-line ((t (:background ,fui-deep-clouds :foreground ,fui-fg :box (:line-width 1)))))
+   `(mode-line ((t (:background ,fui-deep-clouds :foreground ,fui-fg :box (:line-width 1) :family "Inconsolata-11" :height 0.8))))
    `(mode-line-buffer-id ((t (:foreground ,fui-fg))))
-   `(mode-line-inactive ((t (:background ,fui-dark-clouds :foreground ,fui-fg :box (:line-width 1)))))
+   `(mode-line-inactive ((t (:background ,fui-dark-clouds :foreground ,fui-fg :box (:line-width 1) :family "Inconsolata-11" :height 0.8))))
 
    ;; ==== Main pages
    `(set-face-attribute 'Man-overstrike nil :inherit 'bold :foreground ,fui-dark-carrot)
