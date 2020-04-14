@@ -1,29 +1,38 @@
-;;; flatfluc-theme.el --- Custom merge for flucui and flatui themes
+;;; flatfluc-theme.el --- Custom merge for flucui and flatui themes ;; -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2019 Sébastien Le Maguer, MetroWind and John Louis Del Rosario
+;; Copyright (C) 2019 Sébastien Le Maguer based on the work of MetroWind and John Louis Del Rosario
 
-;; This program is free software. It comes without any warranty, to
-;; the extent permitted by applicable law. You can redistribute it
-;; and/or modify it under the terms of the Do What the Fuck You Want
-;; to Public License, Version 2, as published by Sam Hocevar. See
-;; http://www.wtfpl.net/ for more details.
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;; Author: Sébastien Le Maguer <lemagues@tcd.ie>
 ;; URL: https://github.com/seblemaguer/flatfluc-theme
 ;; Keywords: lisp
-;; Version: 1.0
-;; Package-Requires: ((emacs "24"))
+;; Version: 0.5
+;; Package-Requires: ((emacs "26.1"))
 
 ;;; Commentary:
 ;;
 ;; FlatFluc theme is a custom theme for Emacs corresponding to the merge of:
 ;;  - flucui light theme: https://github.com/MetroWind/flucui-theme
 ;;  - flatui theme: https://github.com/john2x/flatui-theme.el
+;;
+;;  The default font used is Inconsolata-11
 
 ;;; Code:
 
 (deftheme flatfluc
-  "FlatUI based theme corresponding to the merge of flatui and flucui-light themes.")
+  "FlatUI based theme which is  merge of flatui and flucui-light themes.")
 
 ;; Colors
 (let*
@@ -53,8 +62,7 @@
      (fui-dark-concrete "#7f8c8d")
 
      (fui-bg fui-clouds)
-     (fui-fg fui-asphalt)
-     )
+     (fui-fg fui-asphalt))
 
   (set-face-font 'default "Inconsolata-11")
   (custom-theme-set-faces
@@ -132,8 +140,8 @@
    `(mode-line-inactive ((t (:background ,fui-dark-clouds :foreground ,fui-fg :box (:line-width 1) :family "Inconsolata-11" :height 0.8))))
 
    ;; ==== Main pages
-   `(set-face-attribute 'Man-overstrike nil :inherit 'bold :foreground ,fui-dark-carrot)
-   `(set-face-attribute 'Man-underline nil :inherit 'underline :foreground ,fui-dark-river)
+   `(set-face-attribute 'Man-overstrike nil :weight bold :foreground ,fui-dark-carrot)
+   `(set-face-attribute 'Man-underline nil  :weight underline :foreground ,fui-dark-river)
 
    ;; ==== Face for specific prog modes
    `(sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
@@ -335,12 +343,11 @@
    `(mu4e-trashed-face              ((t (:foreground ,fui-deep-asphalt))))
    `(mu4e-unread-face               ((t (:foreground ,fui-dark-river))))
    `(mu4e-attach-number-face        ((t (:foreground ,fui-deep-asphalt :background ,fui-deep-clouds))))
-   `(mu4e-url-number-face           ((t (:inherit mu4e-attach-number-face :foreground ,fui-dark-sunflower))))
+   `(mu4e-url-number-face           ((t (:foreground ,fui-dark-sunflower :background ,fui-deep-clouds))))
 
    ;; ==== Highlight-indent-guides
    `(highlight-indent-guides-odd-face ((t (:background ,fui-deep-clouds))))
-   `(highlight-indent-guides-even-face ((t (:background nil))))
-   ))
+   `(highlight-indent-guides-even-face ((t (:background nil))))))
 
 
 ;;;###autoload
@@ -353,7 +360,8 @@
 (provide-theme 'flatfluc)
 
 ;; Local Variables:
-;; no-byte-compile: t
+;; rainbow-mode: t
+;; hl-sexp-mode: nil
 ;; End:
 
 ;;; flatfluc-theme.el ends here
