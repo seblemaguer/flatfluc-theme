@@ -60,8 +60,6 @@
   (custom-theme-set-faces
    'flatfluc
 
- ;;;; Built-in
-
    ;; ===== basic coloring
    `(header-line ((t (:foreground ,fui-deep-asphalt :background ,fui-deep-clouds :box (:line-width -1)))))
    '(button ((t (:underline t))))
@@ -307,6 +305,37 @@
    `(notmuch-tree-match-tag-face ((t (:inherit notmuch-tree-match-author-face))))
    `(notmuch-tag-unread-face ((t (:foreground ,fui-carrot))))
    `(notmuch-message-summary-face ((t (:foreground ,fui-dark-concrete :background ,fui-deep-clouds))))
+
+   ;; ==== Mu4e
+   `(mu4e-title-face                ((t ((t (:foreground ,fui-dark-emerald :background ,fui-bg))))))
+   `(mu4e-cited-1-face              ((t (:foreground ,fui-dark-alizarin))))
+   `(mu4e-cited-2-face              ((t (:foreground ,fui-dark-asphalt))))
+   `(mu4e-cited-3-face              ((t (:foreground ,fui-dark-amethyst))))
+   `(mu4e-cited-4-face              ((t (:foreground ,fui-dark-concrete))))
+   `(mu4e-cited-5-face              ((t (:foreground ,fui-dark-carrot))))
+   `(mu4e-cited-6-face              ((t (:foreground ,fui-dark-river))))
+   `(mu4e-cited-7-face              ((t (:foreground ,fui-dark-sunflower))))
+   `(mu4e-compose-separator-face    ((t (:inherit message-separator))))
+   `(mu4e-contact-face              ((t (:inherit message-header-to))))
+   `(mu4e-draft-face                ((t (:foreground ,fui-dark-alizarin))))
+   `(mu4e-flagged-face              ((t (:foreground ,fui-dark-sunflower))))
+   `(mu4e-footer-face               ((t (:foreground ,fui-dark-turquoise))))
+   `(mu4e-forwarded-face            ((t (:foreground ,fui-dark-amethyst))))
+   `(mu4e-header-highlight-face     ((t (:background ,fui-deep-clouds))))
+   `(mu4e-header-key-face           ((t (:inherit message-header-name))))
+   `(mu4e-header-value-face         ((t (:inherit message-header-other))))
+   `(mu4e-special-header-value-face ((t (:foreground ,fui-dark-emerald))))
+   `(mu4e-header-marks-face         ((t (:foreground ,fui-dark-alizarin))))
+   `(mu4e-highlight-face            ((t (:inherit highlight))))
+   `(mu4e-modeline-face             ((t (:foreground ,fui-dark-emerald))))
+   `(mu4e-moved-face                ((t (:foreground ,fui-dark-river))))
+   `(mu4e-region-code               ((t (:background ,fui-deep-clouds))))
+   `(mu4e-replied-face              ((t (:foreground ,fui-dark-emerald))))
+   `(mu4e-system-face               ((t (:foreground ,fui-dark-turquoise))))
+   `(mu4e-trashed-face              ((t (:foreground ,fui-deep-asphalt))))
+   `(mu4e-unread-face               ((t (:foreground ,fui-dark-river))))
+   `(mu4e-attach-number-face        ((t (:foreground ,fui-deep-asphalt :background ,fui-deep-clouds))))
+   `(mu4e-url-number-face           ((t (:inherit mu4e-attach-number-face :foreground ,fui-dark-sunflower))))
 
    ;; ==== Highlight-indent-guides
    `(highlight-indent-guides-odd-face ((t (:background ,fui-deep-clouds))))
