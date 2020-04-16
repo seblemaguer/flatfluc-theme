@@ -358,6 +358,7 @@
                    (file-name-directory load-file-name))))
 
 (provide-theme 'flatfluc)
+(provide 'flatfluc-theme)
 
 ;; Local Variables:
 ;; rainbow-mode: t
