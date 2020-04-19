@@ -1,3 +1,6 @@
+[![MELPA](https://melpa.org/packages/flatfluc-theme-badge.svg)](https://melpa.org/#/flatfluc-theme)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # FlatFluc theme
 
 FlatFluc theme is a custom theme for Emacs corresponding of the merge of:
@@ -14,9 +17,7 @@ I suggest to use quelpa
 
 ```elisp
   (use-package flatfluc-theme
-    :ensure quelpa
-    :quelpa (flatfluc-theme :fetcher github :repo "seblemaguer/flatfluc-theme")
-    :tags '("VISUAL")
+    :ensure t
     :config
-    (load-theme 'flatfluc))
+    (load-theme 'flatfluc t))
 ```
