@@ -13,7 +13,7 @@ FlatFluc theme is a custom theme for Emacs corresponding of the merge of:
 
 ## Installation
 
-I suggest to use quelpa
+FlatFluc theme is on melpa, and the following snippet is the easiest way of installing it:
 
 ```elisp
   (use-package flatfluc-theme
